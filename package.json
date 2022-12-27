@@ -1,7 +1,7 @@
 {
-	"name": "obsidian-sample-plugin",
+	"name": "obsidian-file-assistant",
 	"version": "1.0.0",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"description": "obsidian 文件助手",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
@@ -9,16 +9,20 @@
 		"version": "node version-bump.mjs && git add manifest.json versions.json"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "yi-huan",
 	"license": "MIT",
 	"devDependencies": {
-		"@types/node": "^16.11.6",
-		"@typescript-eslint/eslint-plugin": "5.29.0",
-		"@typescript-eslint/parser": "5.29.0",
+		"@types/node": "^18.11.17",
+		"@typescript-eslint/eslint-plugin": "5.47.0",
+		"@typescript-eslint/parser": "5.47.0",
 		"builtin-modules": "3.3.0",
-		"esbuild": "0.14.47",
+		"esbuild": "0.16.10",
 		"obsidian": "latest",
 		"tslib": "2.4.0",
 		"typescript": "4.7.4"
+	},
+	"dependencies": {
+		"file-type": "^18.0.0",
+		"is-svg": "^4.3.2"
 	}
 }
